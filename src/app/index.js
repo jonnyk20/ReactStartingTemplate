@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-export class Test extends React.Component {
+export class App extends React.Component {
     render() {
         return(
-            <div>
-                <h1>Test</h1>
+            <div className="container">
+                <div className="row">
+                    <div className="col-xs-10 col-xs-offset-1">
+                        <h1>Hey!!</h1>
+                    </div>
+                </div>
             </div>
         );
     }
 }
 
-ReactDOM.render(<Test />, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById("app"));
+console.log("it works")
